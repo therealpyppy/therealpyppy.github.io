@@ -1,12 +1,9 @@
-* {
-  display: flex;  
-}
-
 body {
   background-color: #92a8d1;
 }
 
 h1 {
+  display: flex;
   font-family: sans-serif;
   font-size: 50;
   justify-content: center;
