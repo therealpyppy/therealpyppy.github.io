@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <body>
+<h1 id="title">Survey</h1>
+<p id="description">Please fill out this form to help us improve</p>
+<form id="survey-form">
+  <label id="name-label">Enter your name:
+  <input placeholder="John smith" type="text" id="name" required />
+  </label>
+
+  <label id="email-label">Enter your email:
+  <input placeholder="example@email.com" type="email" id="email" required/>
+  </label>
+
+  <label id="number-label">How old are you:
+  <input placeholder="24..." min="13" max="120" type="number" id="number" />
+  </label>
+
+<label id="dropdown-label">
+  Where did you find us from?
+<select id="dropdown">
+  <option value="">(select one)</option>
+  <option value="1">Youtube</option>
+  <option value="2">Twitter</option>
+  <option value="3">Other</option>
+
+</select>
+
+  <label>What type of account do you have?
+<label>
+<input value="free" id="free" name="account-plan" class="account-type" type="radio" checked></input> Free
+</label>
+<label>
+<input value="paid" id="premium" name="account-plan" class="account-type" type="radio"></input> Premium
+</label>
+  </label>
+
+<div>
+  <input required value="Terms" id="TaC" type="checkbox">
+  <label class="inline"><a target="_blank" href="tacpriv.html">Terms & Conditions</a></label>
+</div>  
+<input required value="Privacy" id="Priv" type="checkbox">
+<label class="inline" for="Priv"></label><a target="_blank" href="tacpriv.html">Privacy</a></label>
+
+<label id="improvements" class="block">Any Suggestions?
+<textarea id="textarea" class="block" placeholder="How should we improve">
+</textarea>
+</label>
+<input value="Submit" id="submit" type="submit" />
+</form>
+</body>
+</html>
+<head>
+<title>Improvement Survey</title>
+<link rel="stylesheet" href="styles.css">
+</head>
