@@ -1,6 +1,6 @@
 h1 {
+  display: flex;
   font-family: sans-serif;
   font-size: 24;
-  text-align: center;
-  
+  justify-content: center;
 }
