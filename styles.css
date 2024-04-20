@@ -1,6 +1,9 @@
+* {
+  display: flex;  
+}
+
 body {
   background-color: #92a8d1;
-  display: flex;
 }
 
 h1 {
