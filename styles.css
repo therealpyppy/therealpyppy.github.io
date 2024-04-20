@@ -4,7 +4,6 @@ body {
 }
 
 h1 {
-  display: flex;
   font-family: sans-serif;
   font-size: 24;
   justify-content: center;
