@@ -1,17 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
 body {
     background-color: #DBDBDB;
-  }
+}
 
 a {
   color: #a74c22;
   text-decoration: none;
 }
 
+.bold {
+  font-weight: 800;
+}
 
+.small-text {
+  font-size: 0.85rem;
+}
 
-
-  
 .title {
     padding:30px 0 0 20px;
     font-family: sans-serif;
-  }
+}
