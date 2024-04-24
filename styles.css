@@ -1,10 +1,10 @@
 body {
-  background-color: #FFFFFF;
-}
-
-h1 {
-  display: flex;
-  justify-content: start;
-  font-family: sans-serif;
-  font-size: 200%;
-}
+    background-color: #FFFFFF;
+  }
+  
+  h1 {
+    display: flex;
+    justify-content: start;
+    font-family: sans-serif;
+    font-size: 200%;
+  }
