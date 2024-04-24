@@ -1,4 +1,4 @@
-<a href="https://www.github.com/Therealpeppy-YT/Projects">Projects</a> © 2024 by <a href="https://www.github.com/Therealpeppy-YT">Therealpeppy-YT (therealpeppy)</a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
+<a target="_blank" href="https://www.github.com/Therealpeppy-YT/Projects">Projects</a> © 2024 by <a href="https://www.github.com/Therealpeppy-YT">Therealpeppy-YT (therealpeppy)</a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
 
 
 You are free to:
