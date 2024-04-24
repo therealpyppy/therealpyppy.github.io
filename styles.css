@@ -4,6 +4,7 @@
 
 html {
   font-size: 30px;
+  font-family: sans-serif;
 }
 
 body {
@@ -15,12 +16,20 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-family: 'Times New Roman', Times, serif;
+}
+
 .bold {
   font-weight: 800;
 }
 
 .small-text {
-  font-size: 0.85rem;
+  font-size: 0.60rem;
+}
+
+.xtra-small-text {
+  font-size: 0.50rem;
 }
 
 .medium-text {
@@ -28,6 +37,9 @@ a {
 }
 
 .title {
-    padding:30px 0 0 20px;
-    font-family: sans-serif;
+    margin:30px 0 0 20px;
+}
+
+.divider {
+  border-bottom: 1px solid #a8a8a8;
 }
