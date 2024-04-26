@@ -1,45 +1,61 @@
 * {
-  box-sizing: border-box;
-}
-
+    box-sizing: border-box;
+  }
+  
 html {
-  font-size: 30px;
-  font-family: sans-serif;
-}
-
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #d4d4d4a8;
+  }
+  
 body {
-    background-color: #ebeaea;
-}
-
+      background-color: #000000e3;
+  }
+  
 a {
-  color: #a74c22;
-  text-decoration: none;
-}
-
+    color: #ca4688;
+    text-decoration: none;
+  }
+  
 p {
-  font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+footer {
+    text-align: center;
 }
-
 .bold {
-  font-weight: 800;
-}
-
+    font-weight: 800;
+  }
+  
 .small-text {
-  font-size: 0.60rem;
-}
-
+    font-size: 0.60rem;
+  }
+  
 .xtra-small-text {
-  font-size: 0.50rem;
-}
-
+    font-size: 0.50rem;
+  }
+  
 .medium-text {
-  font-size: 1rem;
-}
-
+    font-size: 1rem;
+  }
+  
 .title {
-    margin:80px 0 0 20px;
-}
-
+      margin: 180px 0 0 0;
+      text-align: center;
+  }
+  
 .divider {
-  border-bottom: 1px solid #a8a8a8;
+    border-bottom: 1px solid #00000ebd;
+  }
+
+
+.honk {
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
 }
