@@ -1,2 +1,3 @@
-# The files for my github page
-I do not update this (for now) I might start updating this but I really haven't made anything other than my Astros Score Checker so really no use to yet
+# This is where the files for <a href="https://therealpeppy-yt.github.io/Projects">my website</a> are stored.
+
+Since you are here you might as well check out my <a href="https://www.youtube.com/@therealpeppy">yt channel</a> (theres nothing there)
