@@ -16,6 +16,11 @@ a {
     color: #ca4688;
     text-decoration: none;
   }
+
+a:hover, img:hover, label:hover {
+  cursor:pointer;
+  color: #ac355d;
+}
   
 p {
     font-family: 'Times New Roman', Times, serif;
