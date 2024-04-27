@@ -20,6 +20,12 @@ a {
 p {
     font-family: 'Times New Roman', Times, serif;
   }
+
+img {
+  display: flex;
+  justify-content: center;
+  max-width: 300px;
+}
   
 footer {
     text-align: center;
@@ -41,12 +47,35 @@ footer {
   }
   
 .title {
-      margin: 180px 0 0 0;
+      margin: 90px 0 0 0;
       text-align: center;
   }
   
 .divider {
     border-bottom: 1px solid #00000ebd;
+  }
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    font-size: 75%;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+
+.projects img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
   }
 
 
