@@ -1,95 +1,102 @@
 * {
-    box-sizing: border-box;
-  }
-  
-html {
-    font-size: 30px;
-    font-family: sans-serif;
-    color: #d4d4d4a8;
-  }
-  
-body {
-      background-color: #000000e3;
-  }
-  
-a {
-    color: #ca4688;
-    text-decoration: none;
-  }
-
-a:hover, img:hover, label:hover {
-  cursor:pointer;
-  color: #ac355d;
+  box-sizing: border-box;
 }
-  
+
+html {
+  font-size: 30px;
+  font-family: sans-serif;
+  color: #d4d4d4a8;
+}
+
+body {
+    background-color: #000000e3;
+}
+
+a {
+  color: #ca4688;
+  text-decoration: none;
+}
+
+a:hover, img:hover, .label_link:hover {
+cursor:pointer;
+color: #ac355d;
+}
+
+.center {
+text-align: center;
+}
+
 p {
-    font-family: 'Times New Roman', Times, serif;
-  }
+  font-family: 'Times New Roman', Times, serif;
+}
 
 img {
-  display: flex;
-  justify-content: center;
-  max-width: 300px;
+display: flex;
+justify-content: center;
+max-width: 300px;
 }
-  
+
 footer {
-    text-align: center;
+  text-align: center;
 }
 .bold {
-    font-weight: 800;
-  }
-  
+  font-weight: 800;
+}
+
 .small-text {
-    font-size: 0.60rem;
-  }
-  
+  font-size: 0.60rem;
+}
+
 .xtra-small-text {
-    font-size: 0.50rem;
-  }
-  
+  font-size: 0.50rem;
+}
+
 .medium-text {
-    font-size: 1rem;
-  }
-  
+  font-size: 1rem;
+}
+
 .title {
-      margin: 90px 0 0 0;
-      text-align: center;
-  }
-  
+    margin: 90px 0 0 0;
+    text-align: center;
+}
+
 .divider {
-    border-bottom: 1px solid #00000ebd;
-  }
+  border-bottom: 2px solid #00000ebd;
+}
 
 .projects {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 20px 10px;
-    font-size: 75%;
-    text-align: center;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-  }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  font-size: 75%;
+  text-align: center;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
 
 .projects img {
-    width: 100%;
-    max-width: 350px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-  }
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
 
-
+.big {
+  font-size: 125%;
+  padding: 20px 0 0 0;
+}
 .honk {
-  font-family: "Honk", system-ui;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: italic;
-  font-variation-settings:
-    "MORF" 15,
-    "SHLN" 50;
+font-family: "Honk", system-ui;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: italic;
+font-variation-settings:
+  "MORF" 15,
+  "SHLN" 50;
 }
