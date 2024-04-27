@@ -17,9 +17,13 @@ a {
   text-decoration: none;
 }
 
-a:hover, img:hover, .label_link:hover {
+a:hover, .label_link:hover {
 cursor:pointer;
 color: #ac355d;
+}
+
+img:hover {
+  cursor:pointer;
 }
 
 .center {
