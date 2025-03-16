@@ -4,7 +4,7 @@ name: Deploy static content to Pages
 on:
   # Runs on commits to the main branch
   push:
-    branches: ['main']
+    branches: ['master']
 
   # Allows you to run this workflow manually from the Actions tab (optional)
   workflow_dispatch:
