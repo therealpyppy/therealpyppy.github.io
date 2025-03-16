@@ -46,6 +46,10 @@ jobs:
         with:
           # Upload dist folder
           path: './dist'
+     
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: dist
+          token: ${{ secrets.GITHUB_TOKEN }}
