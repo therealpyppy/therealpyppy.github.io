@@ -3,7 +3,7 @@ window.onload = function () {
     for (let i = 0; i < hiddenItems.length; i++) {
         hiddenItems[i].remove();
     }
-    const backgrounds = ['src/assets/Assets/bg.jpg', 'src/assets/Assets/bg3.jpg', 'src/assets/Assets/bg4.jpg'];
+    const backgrounds = ['Assets/bg.jpg', 'Assets/bg3.jpg', 'Assets/bg4.jpg'];
     const randomBg = backgrounds[Math.floor(Math.random() * backgrounds.length)];
 
     const backgroundElement = document.querySelector('.background');
