@@ -1,0 +1,94 @@
+import { useState } from "react";
+
+export default function TechStack() {
+    const [expanded, setExpanded] = useState(false);
+
+    const mainIcons = [
+        {
+            src: "/src/assets/icons/python.svg",
+            alt: "Python",
+            label: "Python"
+        },
+        {
+            src: "/src/assets/icons/rust.png",
+            alt: "Rust",
+            label: "Rust"
+        },
+        {
+            src: "/src/assets/icons/htmlcss.png",
+            alt: "HTML/CSS",
+            label: "HTML CSS"
+        },
+        {
+            src: "/src/assets/icons/java.svg",
+            alt: "Java",
+            label: "Java"
+        }
+    ];
+
+    const moreIcons = [
+        {
+            src: "/src/assets/icons/js.svg",
+            alt: "JavaScript",
+            label: "JavaScript"
+        },
+        {
+            src: "/src/assets/icons/react.svg",
+            alt: "React",
+            label: "React"
+        },
+        {
+            src: "/src/assets/icons/vite.svg",
+            alt: "Vite",
+            label: "Vite"
+        },
+        {
+            src: "/src/assets/icons/Git.svg",
+            alt: "Git",
+            label: "Git"
+        },
+        {
+            src: "/src/assets/icons/nodejs.svg",
+            alt: "Node.js",
+            label: "Node.js"
+        }
+    ];
+
+    return (
+        <div className="flex flex-col items-center gap-2">
+            <h3 className="text-white text-lg font-semibold">Tech Stack</h3>
+            <div className="flex flex-row gap-6">
+                {mainIcons.map((icon) => (
+                    <div key={icon.label} className="group relative flex flex-col items-center">
+                        <img src={icon.src} alt={icon.alt} className="w-8 h-8" />
+                        <span className="absolute bottom-[-1.5rem] left-1/2 -translate-x-1/2 bg-neutral-800 text-xs text-white rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap">
+                            {icon.label}
+                        </span>
+                    </div>
+                ))}
+            </div>
+            <button
+                className="mt-2 text-blue-400 hover:underline focus:outline-none"
+                onClick={() => setExpanded((e) => !e)}
+                aria-expanded={expanded}
+            >
+                {expanded ? "See Less" : "See More"}
+            </button>
+            <div
+                className={`overflow-hidden transition-all duration-300 ${expanded ? "max-h-40 opacity-100 mt-2" : "max-h-0 opacity-0"}`}
+                style={{ width: "100%" }}
+            >
+                <div className="flex flex-row gap-6 justify-center pt-2">
+                    {moreIcons.map((icon) => (
+                        <div key={icon.label} className="group relative flex flex-col items-center">
+                            <img src={icon.src} alt={icon.alt} className="w-8 h-8" />
+                            <span className="absolute bottom-[-1.5rem] left-1/2 -translate-x-1/2 bg-neutral-800 text-xs text-white rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap">
+                                {icon.label}
+                            </span>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+}

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import TechStack from "@/components/tech-stack"
 
 export default function Trad() {
     return (
@@ -19,7 +20,7 @@ export default function Trad() {
             <div
                 className="fixed inset-0 w-full h-full bg-cover bg-center -z-10"
                 style={{
-                    backgroundImage: `url('src/assets/bg.jpg')`
+                    backgroundImage: `url('src/assets/bg3.jpg')`
                 }}>
             </div>
 
@@ -33,29 +34,9 @@ export default function Trad() {
                     <h1 className="text-3xl font-bold text-white">
                         <span className="text-blue-400">Iain Fox</span>
                     </h1>
-                    <h2 className="text-lg text-neutral-300 mb-2">Aspiring Software Engineer</h2>
+                    <h2 className="text-lg text-neutral-300 mb-2">Software Engineer</h2>
 
-                    <div className="flex flex-col items-center gap-2">
-                        <h3 className="text-white text-lg font-semibold">Tech Stack</h3>
-                        <div className="flex flex-row gap-6">
-                            <div className="group relative flex flex-col items-center">
-                                <img src="/src/assets/icons/python.svg" alt="Python" className="w-8 h-8" />
-                                <span className="absolute bottom-[-1.5rem] left-1/2 -translate-x-1/2 bg-neutral-800 text-xs text-white rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap">Python</span>
-                            </div>
-                            <div className="group relative flex flex-col items-center">
-                                <img src="/src/assets/icons/rust.png" alt="Rust" className="w-8 h-8" />
-                                <span className="absolute bottom-[-1.5rem] left-1/2 -translate-x-1/2 bg-neutral-800 text-xs text-white rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap">Rust</span>
-                            </div>
-                            <div className="group relative flex flex-col items-center">
-                                <img src="/src/assets/icons/htmlcss.png" alt="HTML/CSS" className="w-8 h-8" />
-                                <span className="absolute bottom-[-1.5rem] left-1/2 -translate-x-1/2 bg-neutral-800 text-xs text-white rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap">HTML CSS</span>
-                            </div>
-                            <div className="group relative flex flex-col items-center">
-                                <img src="/src/assets/icons/java.svg" alt="Java" className="w-8 h-8" />
-                                <span className="absolute bottom-[-1.5rem] left-1/2 -translate-x-1/2 bg-neutral-800 text-xs text-white rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap">Java</span>
-                            </div>
-                        </div>
-                    </div>
+                    <TechStack />
 
                     <div className="flex flex-col items-center gap-1 mt-4">
                         <h3 className="text-white text-lg font-semibold">Education</h3>
