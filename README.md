@@ -1,2 +1,2 @@
 # My portfolio website
-Made with basic Html/Css + A little JS
+Made with Vite + React + TS and shadcn ui components
