@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import Navigation from './components/Navigation'
 import Home from './pages/Home'
 import Term from './pages/Term'
@@ -9,7 +9,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 function App() {
     return (
         <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-            <BrowserRouter>
+            <HashRouter>
                 <Navigation />
                 <Routes>
                     <Route path="/" element={<Home />} />
@@ -17,7 +17,7 @@ function App() {
                     <Route path="/traditional" element={<Trad />} />
                     <Route path="/traditional/projects" element={<TradProj />} />
                 </Routes>
-            </BrowserRouter>
+            </HashRouter>
         </ThemeProvider>
     )
 }
