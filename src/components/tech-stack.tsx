@@ -5,22 +5,22 @@ export default function TechStack() {
 
     const mainIcons = [
         {
-            src: "/src/assets/icons/python.svg",
+            src: "assets/icons/python.svg",
             alt: "Python",
             label: "Python"
         },
         {
-            src: "/src/assets/icons/rust.png",
+            src: "assets/icons/rust.png",
             alt: "Rust",
             label: "Rust"
         },
         {
-            src: "/src/assets/icons/htmlcss.png",
+            src: "assets/icons/htmlcss.png",
             alt: "HTML/CSS",
             label: "HTML CSS"
         },
         {
-            src: "/src/assets/icons/java.svg",
+            src: "assets/icons/java.svg",
             alt: "Java",
             label: "Java"
         }
@@ -28,22 +28,22 @@ export default function TechStack() {
 
     const moreIcons = [
         {
-            src: "/src/assets/icons/js.svg",
+            src: "assets/icons/js.svg",
             alt: "JavaScript",
             label: "JavaScript"
         },
         {
-            src: "/src/assets/icons/react.svg",
+            src: "assets/icons/react.svg",
             alt: "React",
             label: "React"
         },
         {
-            src: "/src/assets/icons/vite.svg",
+            src: "assets/icons/vite.svg",
             alt: "Vite",
             label: "Vite"
         },
         {
-            src: "/src/assets/icons/Git.svg",
+            src: "assets/icons/git.svg",
             alt: "Git",
             label: "Git"
         }

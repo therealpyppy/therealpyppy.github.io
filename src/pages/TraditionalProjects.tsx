@@ -20,7 +20,7 @@ export default function TradProj() {
             <div
                 className="absolute inset-0 w-full h-full bg-cover bg-center -z-10"
                 style={{
-                    backgroundImage: `url('/src/assets/bg3.jpg')`
+                    backgroundImage: `url('/assets/bg3.jpg')`
                 }}>
             </div>
             

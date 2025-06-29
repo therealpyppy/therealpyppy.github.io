@@ -20,14 +20,14 @@ export default function Trad() {
             <div
                 className="fixed inset-0 w-full h-full bg-cover bg-center -z-10"
                 style={{
-                    backgroundImage: `url('src/assets/bg3.jpg')`
+                    backgroundImage: `url('assets/bg3.jpg')`
                 }}>
             </div>
 
             <div className="fixed left-1/2 top-1/2 z-0 -translate-x-1/2 -translate-y-1/2 bg-neutral-900/95 rounded p-8 w-auto h-auto flex items-center justify-center shadow-2xl">
                 <div className="flex flex-col items-center gap-6 w-full">
                     <img
-                        src="/src/assets/pfp.png"
+                        src="assets/pfp.png"
                         alt="Profile Picture"
                         className="w-32 h-32 rounded-full border-4 border-white shadow-lg object-cover mb-2"
                     />
@@ -67,7 +67,7 @@ export default function Trad() {
                             rel="noopener noreferrer"
                             className="hover:scale-110 transition"
                         >
-                            <img src="/src/assets/icons/github.svg" alt="GitHub" className="w-7 h-7" />
+                            <img src="assets/icons/github.svg" alt="GitHub" className="w-7 h-7" />
                         </a>
                         <a
                             href="https://discord.com/users/therealpeppy"
@@ -75,7 +75,7 @@ export default function Trad() {
                             rel="noopener noreferrer"
                             className="hover:scale-110 transition"
                         >
-                            <img src="/src/assets/icons/discord.svg" alt="Discord" className="w-7 h-7" />
+                            <img src="assets/icons/discord.svg" alt="Discord" className="w-7 h-7" />
                         </a>
                         <a
                             href=""
@@ -83,7 +83,7 @@ export default function Trad() {
                             tabIndex={-1}
                             aria-disabled="true"
                         >
-                            <img src="/src/assets/icons/linkedin.svg" alt="LinkedIn" className="w-7 h-7" />
+                            <img src="assets/icons/linkedin.svg" alt="LinkedIn" className="w-7 h-7" />
                         </a>
                     </div>
                 </div>
