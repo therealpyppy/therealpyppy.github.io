@@ -6,12 +6,12 @@ export default function TradProj() {
         <div className="min-h-screen relative">
             <div className="absolute top-2 right-2 z-50 flex flex-row gap-4">
                 <Link to="/traditional">
-                    <h1 className="text-xl font-semibold text-right text-black">
+                    <h1 className="text-xl font-semibold text-right text-white">
                         About
                     </h1>
                 </Link>
                 <Link to="/traditional/projects">
-                    <h1 className="text-xl font-semibold text-right underline text-black">
+                    <h1 className="text-xl font-semibold text-right underline text-white">
                         Projects
                     </h1>
                 </Link>
@@ -20,7 +20,7 @@ export default function TradProj() {
             <div
                 className="absolute inset-0 w-full h-full bg-cover bg-center -z-10"
                 style={{
-                    backgroundImage: `url('src/assets/bg3.jpg')`
+                    backgroundImage: `url('/src/assets/bg3.jpg')`
                 }}>
             </div>
             
