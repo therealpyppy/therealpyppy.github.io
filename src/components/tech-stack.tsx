@@ -46,11 +46,6 @@ export default function TechStack() {
             src: "/src/assets/icons/Git.svg",
             alt: "Git",
             label: "Git"
-        },
-        {
-            src: "/src/assets/icons/nodejs.svg",
-            alt: "Node.js",
-            label: "Node.js"
         }
     ];
 
