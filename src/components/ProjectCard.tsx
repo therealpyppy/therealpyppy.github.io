@@ -35,7 +35,7 @@ export function ProjectCard({
       {tags.length > 0 && (
         <div className="flex flex-row gap-3 justify-center items-center mb-4">
           {tags.map((tag, index) => (
-            <Tag key={index} variant={tag.variant || 'default'} size={ tag.size || 'default' }>
+            <Tag key={index} variant={tag.variant || 'default'} size={ tag.size || 'sm' }>
               <strong>{tag.text}</strong>
             </Tag>
           ))}
