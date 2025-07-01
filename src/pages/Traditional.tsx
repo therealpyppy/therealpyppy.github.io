@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import TechStack from "@/components/tech-stack"
+import { Button } from '@/components/ui/button'
 
 export default function Trad() {
     return (
@@ -44,47 +45,37 @@ export default function Trad() {
                     </div>
 
                     <div className="flex flex-row gap-4 mt-4">
-                        <a
-                            href="mailto:iainpfox@gmail.com"
-                            className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded shadow font-medium transition"
-                        >
-                            Contact Me
-                        </a>
-                        <a
-                            href="/resume.pdf"
-                            className="bg-neutral-500 text-white px-4 py-2 rounded shadow font-medium opacity-60 cursor-not-allowed pointer-events-none"
-                            tabIndex={-1}
-                            aria-disabled="true"
-                        >
-                            View Resume
-                        </a>
+                        <Button variant="contact" asChild>
+                            <a href="mailto:iainpfox@gmail.com">
+                                Contact Me
+                            </a>
+                        </Button>
+                        <Button variant="hidden" asChild>
+                            <a
+                                href="/resume.pdf">
+                                View Resume
+                            </a>
+                        </Button>
                     </div>
 
-                    <div className="flex flex-row gap-4 mt-4">
-                        <a
-                            href="https://github.com/therealpyppy"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="hover:scale-110 transition"
-                        >
-                            <img src="assets/icons/github.svg" alt="GitHub" className="w-7 h-7" />
-                        </a>
-                        <a
-                            href="https://discord.com/users/therealpeppy"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="hover:scale-110 transition"
-                        >
-                            <img src="assets/icons/discord.svg" alt="Discord" className="w-7 h-7" />
-                        </a>
-                        <a
-                            href=""
-                            className="opacity-60 pointer-events-none"
-                            tabIndex={-1}
-                            aria-disabled="true"
-                        >
-                            <img src="assets/icons/linkedin.svg" alt="LinkedIn" className="w-7 h-7" />
-                        </a>
+                    <div className="flex flex-row gap-4 mt-4 justify-center items-center">
+                        <Button size="icon" asChild>
+                            <a href="https://github.com/therealpyppy" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/icons/github.svg" alt="GitHub" className="w-7 h-7" />
+                            </a>
+                        </Button>
+                            
+                        <Button size="icon" asChild>
+                            <a href="https://discord.com/users/therealpeppy" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/icons/discord.svg" alt="Discord" className="w-7 h-7" />
+                            </a>
+                        </Button>
+
+                        <Button variant="hidden" size="icon" asChild>
+                            <a href="./" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/icons/linkedin.svg" alt="LinkedIn" className="w-7 h-7" />
+                            </a>
+                        </Button>
                     </div>
                 </div>
             </div>
