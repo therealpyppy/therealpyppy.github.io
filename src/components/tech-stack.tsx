@@ -9,24 +9,16 @@ export default function TechStack() {
             alt: "Python",
             label: "Python"
         },
-        {
-            src: "assets/icons/rust.png",
-            alt: "Rust",
-            label: "Rust"
-        },
+//        {
+//            src: "assets/icons/rust.png",
+//            alt: "Rust",
+//            label: "Rust"
+//       },
         {
             src: "assets/icons/htmlcss.png",
             alt: "HTML/CSS",
             label: "HTML CSS"
         },
-        {
-            src: "assets/icons/java.svg",
-            alt: "Java",
-            label: "Java"
-        }
-    ];
-
-    const moreIcons = [
         {
             src: "assets/icons/js.svg",
             alt: "JavaScript",
@@ -36,6 +28,14 @@ export default function TechStack() {
             src: "assets/icons/react.svg",
             alt: "React",
             label: "React"
+        },
+    ];
+
+    const moreIcons = [
+        {
+            src: "assets/icons/java.svg",
+            alt: "Java",
+            label: "Java"
         },
         {
             src: "assets/icons/vite.svg",
