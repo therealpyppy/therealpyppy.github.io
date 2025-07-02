@@ -24,11 +24,6 @@ export default function TechStack() {
             alt: "JavaScript",
             label: "JavaScript"
         },
-        {
-            src: "assets/icons/react.svg",
-            alt: "React",
-            label: "React"
-        },
     ];
 
     const moreIcons = [
@@ -38,15 +33,20 @@ export default function TechStack() {
             label: "Java"
         },
         {
+            src: "assets/icons/git.svg",
+            alt: "Git",
+            label: "Git"
+        },
+        {
+            src: "assets/icons/react.svg",
+            alt: "React",
+            label: "React"
+        },
+        {
             src: "assets/icons/vite.svg",
             alt: "Vite",
             label: "Vite"
         },
-        {
-            src: "assets/icons/git.svg",
-            alt: "Git",
-            label: "Git"
-        }
     ];
 
     return (
