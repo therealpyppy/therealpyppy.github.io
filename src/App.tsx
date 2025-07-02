@@ -4,7 +4,7 @@ import Home from './pages/Home'
 import Term from './pages/Term'
 import Trad from './pages/Traditional'
 import TradProj from './pages/TraditionalProjects'
-import { ThemeProvider } from "@/components/theme-provider"
+import { ThemeProvider } from "@/components/ThemeProvider"
 
 function App() {
     return (
