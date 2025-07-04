@@ -62,13 +62,6 @@ export default function TechStack() {
                     </div>
                 ))}
             </div>
-            <button
-                className="mt-2 text-blue-400 hover:underline focus:outline-none"
-                onClick={() => setExpanded((e) => !e)}
-                aria-expanded={expanded}
-            >
-                {expanded ? "See Less" : "See More"}
-            </button>
             <div
                 className={`overflow-hidden transition-all duration-300 ${expanded ? "max-h-40 opacity-100 mt-2" : "max-h-0 opacity-0"}`}
                 style={{ width: "100%" }}
@@ -84,6 +77,13 @@ export default function TechStack() {
                     ))}
                 </div>
             </div>
+            <button
+                className="mt-2 text-blue-400 hover:underline focus:outline-none"
+                onClick={() => setExpanded((e) => !e)}
+                aria-expanded={expanded}
+            >
+                {expanded ? "See Less" : "See More"}
+            </button>
         </div>
     );
 }
