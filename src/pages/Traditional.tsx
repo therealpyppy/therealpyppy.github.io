@@ -31,7 +31,7 @@ export default function Trad() {
         <BackgroundWrapper backgroundImage="assets/bg3.jpg">
             <ProfileHeader />
             
-            <div className="fixed left-1/2 top-1/2 z-0 -translate-x-1/2 -translate-y-1/2 bg-neutral-900/95 rounded p-8 w-auto h-auto flex items-center justify-center shadow-2xl">
+            <div className="fixed left-1/2 top-1/2 z-0 -translate-x-1/2 -translate-y-1/2 bg-card rounded-lg p-8 w-auto h-auto flex items-center justify-center shadow-2xl">
                 <div className="flex flex-col items-center gap-6 w-full">
                     <ProfileCard
                         name="Iain Fox"

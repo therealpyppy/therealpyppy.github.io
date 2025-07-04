@@ -50,8 +50,8 @@ export default function TechStack() {
     ];
 
     return (
-        <div className="flex flex-col items-center gap-2">
-            <h3 className="text-white text-lg font-semibold">Tech Stack</h3>
+        <div className="bg-secondary p-5 rounded-lg flex flex-col items-center gap-2">
+            <h3 className="text-primary text-lg font-semibold">Tech Stack</h3>
             <div className="flex flex-row gap-6">
                 {mainIcons.map((icon) => (
                     <div key={icon.label} className="group relative flex flex-col items-center">
@@ -70,7 +70,7 @@ export default function TechStack() {
                     {moreIcons.map((icon) => (
                         <div key={icon.label} className="group relative flex flex-col items-center">
                             <img src={icon.src} alt={icon.alt} className="w-8 h-8" />
-                            <span className="absolute bottom-[-1.5rem] left-1/2 -translate-x-1/2 bg-neutral-800 text-xs text-white rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap">
+                            <span className="absolute bottom-[-1.5rem] left-1/2 -translate-x-1/2 bg-neutral-800 text-xs text-primary rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap">
                                 {icon.label}
                             </span>
                         </div>

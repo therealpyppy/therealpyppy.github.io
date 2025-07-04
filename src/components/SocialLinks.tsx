@@ -19,7 +19,7 @@ export default function SocialLinks({ links }: SocialLinksProps) {
                 <Button 
                     key={link.platform}
                     size="icon" 
-                    variant={link.variant || 'default'}
+                    variant={link.variant || 'secondary'}
                     asChild
                 >
                     <a 
