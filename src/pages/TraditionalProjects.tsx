@@ -25,12 +25,16 @@ export default function TradProj() {
             ]
         },
         {
-            title: "ROTMG Scraper",
-            description: 'Python web scraper that scrapes the realmeye website for important player information',
-            githubUrl: "https://github.com/therealpyppy/ROTMG-Scraper",
+            title: "Plot Assist",
+            description: "A simple tool to quickly graph data from DataFrames using Matplotlib and Pandas's",
+            githubUrl: "https://github.com/therealpyppy/plotAssist",
             tags: [
                 { text: "Python" },
-                { text: "Requests Html" }
+                { text: "Tkinter" },
+                { text: "Matplotlib" },
+                { text: "Pandas" },
+                { text: "Numpy" },
+                { text: "Matplotlib" },
             ]
         },
         {
