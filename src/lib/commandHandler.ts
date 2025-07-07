@@ -29,7 +29,7 @@ export const commands: CommandHandler = {
     }),
 
     about: () => ({
-        content: `Hi! I'm Peppy (aka Pyppy), a passionate developer specializes in full-stack development.
+        content: `Hi! I'm Peppy (aka Pyppy), a passionate developer who's trying to find where I fit.
 When I'm not coding, I'm sleeping.`,
         type: 'system'
     }),
