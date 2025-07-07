@@ -14,7 +14,8 @@ export const commands: CommandHandler = {
 • clear - Clear the terminal
 • about - About me
 • skills - My technical skills
-• projects - My projects
+• ls - View projects
+• cat [project] - View detailed info about a project
 • contact - Contact information
 • past - View past websites
 • date - Current date and time
@@ -43,13 +44,13 @@ When I'm not coding, I'm sleeping.`,
         type: 'system'
     }),
 
-    projects: () => ({
-        content: `My Projects:
-• Portfolio Website (React + TypeScript)
-• Chat Application (WebSocket + React)
-• Plot Assist (Python + mpl + pandas)
+    ls: () => ({
+        content: `
+• /Portfolio-Website (React + TypeScript)
+• /ChatApp (WebSocket + React)
+• /PlotAssist (Python + mpl + pandas)
 
-Visit my GitHub for more details!`,
+run cat [Project Name] to view more info`,
         type: 'system'
     }),
 
@@ -68,11 +69,6 @@ Visit my GitHub for more details!`,
 
     echo: (args: string[]) => ({
         content: args.join(' ') || 'No text provided',
-        type: 'system'
-    }),
-
-    ls: () => ({
-        content: Object.keys(commands).join('  '),
         type: 'system'
     }),
 
