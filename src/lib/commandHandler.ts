@@ -29,18 +29,18 @@ Repo: https://github.com/therealpyppy/PlotAssist`
 
 export const commands: CommandHandler = {
     help: () => ({
-        content: `Available commands:
-• help - Show this help message
-• clear - Clear the terminal
-• about - About me
-• skills - My technical skills
-• ls - View projects
-• cat [project] - View detailed info about a project
-• contact - Contact information
-• past - View past websites
-• date - Current date and time
-• echo [text] - Echo back the text
-• refresh - Refresh the terminal`,
+        content: `Commands:
+help            Show this help message
+clear           Clear the terminal
+about           About me
+skills          My technical skills
+ls              View projects
+cat [project]   View more info about a project
+contact         Contact information
+past            View past websites
+date            Current date and time
+echo [text]     Echo back the text
+refresh         Refresh the terminal`,
         type: 'system'
     }),
 
