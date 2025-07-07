@@ -73,15 +73,15 @@ export default function Term() {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen min-w-full bg-neutral-900 text-green-400 font-mono">
-            <div className="w-full max-w-xl rounded-lg shadow-lg border border-neutral-700 bg-neutral-950/95 p-0 overflow-hidden">
+        <div className="flex flex-col items-center justify-center min-h-screen min-w-full bg-neutral-900 text-green-400 font-mono text-base">
+            <div className="w-full max-w-xl rounded-lg shadow-lg border border-neutral-700 bg-neutral-950/95 p-0 overflow-hidden h-[400px]">
                 <div className="flex items-center px-4 py-2 bg-neutral-800 border-b border-neutral-700">
                     <span className="mr-auto text-xs text-neutral-400">pyppy@portfolio:~</span>
                     <span className="h-3 w-3 rounded-full bg-green-500 mr-2"></span>
                     <span className="h-3 w-3 rounded-full bg-yellow-400 mr-2"></span>
                     <span className="h-3 w-3 rounded-full bg-red-500"></span>
                 </div>
-                <div className="flex flex-col px-4 py-6 min-h-[400px]">
+                <div className="flex flex-col px-4 py-6 flex-1 overflow-y-auto h-[calc(100%-48px)] [&::-webkit-scrollbar]:w-2">
                     <MessageContainer messages={messages} />
                     <div ref={messagesEndRef} />
                     <form
@@ -99,10 +99,9 @@ export default function Term() {
                             value={input}
                             autoFocus
                             spellCheck={false}
-                            className="bg-transparent border-none outline-none shadow-none text-green-400 font-mono flex-1 px-0 py-1 focus:ring-0 focus:outline-none"
+                            className="bg-transparent dark:bg-transparent border-none outline-none shadow-none text-green-400 font-mono text-base flex-1 px-0 py-1 focus:ring-0 focus:outline-none focus:shadow-none"
                             onChange={e => setInput(e.target.value)}
                             onKeyDown={handleKeyDown}
-                            style={{ boxShadow: "none" }}
                         />
                     </form>
                 </div>
