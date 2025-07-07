@@ -56,19 +56,19 @@ When I'm not coding, I'm sleeping.`,
     }),
 
     skills: () => ({
-        content: `My Technical Skills:
-• Frontend: React, TypeScript, HTML/CSS, Tailwind CSS, Learning three.js
-• Backend: Python, Learning Rust
-• Tools: Git, VS Code, Vite
-• Other: WebSockets`,
+        content: `Skills:
+Frontend: React, TypeScript, HTML/CSS, Tailwind CSS, Learning three.js
+Backend: Python, Learning Rust
+Tools: Git, VS Code, Vite
+Other: WebSockets`,
         type: 'system'
     }),
 
     ls: () => ({
         content: `
-• /Portfolio-Website (React + TypeScript)
-• /ChatApp (WebSocket + React)
-• /PlotAssist (Python + mpl + pandas)
+/Portfolio-Website (React + TypeScript)
+/ChatApp (WebSocket + React)
+/PlotAssist (Python + mpl + pandas)
 
 run cat [Project Name] to view more info`,
         type: 'system'
