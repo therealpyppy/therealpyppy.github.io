@@ -7,6 +7,26 @@ export interface CommandHandler {
     [key: string]: (args: string[]) => CommandResponse;
 }
 
+const projectDetails: { [key: string]: string } = {
+    "portfolio-website": `Portfolio Website
+A personal portfolio built with React and TypeScript.
+Features a terminal-inspired interface, project showcase, and more.
+Tech: React, TypeScript, Tailwind CSS, Vite
+Repo: https://github.com/therealpyppy/Portfolio-Website`,
+
+    "chatapp": `ChatApp
+A real-time chat application using WebSockets and React.
+Supports multiple rooms and instant messaging.
+Tech: WebSocket, React, TypeScript
+Repo: https://github.com/therealpyppy/ChatApp`,
+
+    "plotassist": `PlotAssist
+A Python tool for assisting with data plotting and analysis.
+Built with matplotlib and pandas for data visualization.
+Tech: Python, matplotlib, pandas
+Repo: https://github.com/therealpyppy/PlotAssist`
+};
+
 export const commands: CommandHandler = {
     help: () => ({
         content: `Available commands:
@@ -53,6 +73,33 @@ When I'm not coding, I'm sleeping.`,
 run cat [Project Name] to view more info`,
         type: 'system'
     }),
+
+    cat: (args: string[]) => {
+        if (!args.length) {
+            return {
+                content: "Usage: cat [project]\nExample: cat Portfolio-Website",
+                type: "error"
+            };
+        }
+        const key = args.join(' ').toLowerCase().replace(/[^a-z0-9]/gi, '');
+
+        let matchedKey = '';
+        if (key.includes('portfolio')) matchedKey = 'portfolio-website';
+        else if (key.includes('chat')) matchedKey = 'chatapp';
+        else if (key.includes('plot')) matchedKey = 'plotassist';
+
+        if (matchedKey && projectDetails[matchedKey]) {
+            return {
+                content: projectDetails[matchedKey],
+                type: 'system'
+            };
+        } else {
+            return {
+                content: `Project not found. Try: Portfolio-Website, ChatApp, or PlotAssist.`,
+                type: 'error'
+            };
+        }
+    },
 
     contact: () => ({
         content: `Get in touch with me:
