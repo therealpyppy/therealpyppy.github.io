@@ -128,7 +128,6 @@ cd [directory]  Change directory
 cat [file]      Display file contents
 open [file]     Open repository URL (if file contains URL)
 pwd             Show current directory path
-past            View past websites
 date            Current date and time
 echo [text]     Echo back the text
 refresh         Refresh the terminal`,
@@ -140,7 +139,7 @@ refresh         Refresh the terminal`,
         type: 'system'
     }),
 
-    ls: (args: string[], currentPath: string) => {
+    ls: (_args: string[], currentPath: string) => {
         const contents = getDirectoryContents(currentPath);
         if (contents.length === 0) {
             return {
@@ -261,7 +260,7 @@ refresh         Refresh the terminal`,
         };
     },
 
-    pwd: (args: string[], currentPath: string) => ({
+    pwd: (_args: string[], currentPath: string) => ({
         content: currentPath,
         type: 'system'
     }),
@@ -273,14 +272,6 @@ refresh         Refresh the terminal`,
 
     echo: (args: string[]) => ({
         content: args.join(' ') || 'No text provided',
-        type: 'system'
-    }),
-
-    past: (args: string[], currentPath: string) => ({
-        content: `Past websites and projects:
-• Portfolio Website (Current) - React + TypeScript
-• Previous iterations included different designs and technologies
-• Always learning and improving!`,
         type: 'system'
     }),
 
