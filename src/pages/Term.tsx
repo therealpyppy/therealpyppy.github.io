@@ -21,12 +21,13 @@ export default function Term() {
         },
         {
             id: '2',
-            content: 'psst... Want to see the past? Enter the command `past`',
+            content: 'Welcome to the file system! Use ls to see files, cd to navigate, and cat to read files.',
             type: 'system',
             timestamp: new Date()
         }
     ]);
     const [input, setInput] = useState("");
+    const [currentPath, setCurrentPath] = useState("/");
     const messagesEndRef = useRef<HTMLDivElement>(null);
 
     const scrollToBottom = () => {
@@ -47,7 +48,7 @@ export default function Term() {
 
         setMessages(prev => [...prev, userMessage]);
 
-        const response = executeCommand(command);
+        const response = executeCommand(command, currentPath);
         
         if (response.content) {
             const systemMessage: MessageData = {
@@ -57,6 +58,12 @@ export default function Term() {
                 timestamp: new Date()
             };
             setMessages(prev => [...prev, systemMessage]);
+        }
+
+        if (response.action === 'navigate' && response.url) {
+            setCurrentPath(response.url);
+        } else if (response.action === 'open_url' && response.url) {
+            window.open(response.url, '_blank');
         }
 
         if (command.trim().toLowerCase() === 'clear') {
@@ -72,11 +79,16 @@ export default function Term() {
         }
     };
 
+    const formatPath = (path: string) => {
+        if (path === '/') return '~';
+        return path.replace(/^\//, '~/');
+    };
+
     return (
         <div className="flex flex-col items-center justify-center min-h-screen min-w-full bg-neutral-900 text-green-400 font-mono text-base">
             <div className="w-full max-w-xl rounded-lg shadow-lg border border-neutral-700 bg-neutral-950/95 p-0 overflow-hidden h-[400px]">
                 <div className="flex items-center px-4 py-2 bg-neutral-800 border-b border-neutral-700">
-                    <span className="mr-auto text-xs text-neutral-400">pyppy@portfolio:~</span>
+                    <span className="mr-auto text-xs text-neutral-400">pyppy@portfolio:{formatPath(currentPath)}</span>
                     <span className="h-3 w-3 rounded-full bg-green-500 mr-2"></span>
                     <span className="h-3 w-3 rounded-full bg-yellow-400 mr-2"></span>
                     <span className="h-3 w-3 rounded-full bg-red-500"></span>
